@@ -1,9 +1,10 @@
 {
   "id": "f089820f-7f1a-4fec-8612-d65c1a4752be",
-  "versao": 3,
-  "nome": "Tênis Plumax Ref 8000",
+  "versao": 4,
+  "nome": "Tênis Plumax",
   "slug": "tenis-plumax",
   "descricao": "Marca: Plumax\nReferência:8000\nTipo: Cadarço\nCabedal: Lona\nSolado: Borracha\n\n",
+  "referencia": "8000",
   "preco": 99.9,
   "precoPromocional": 79.9,
   "categoriasIds": [
@@ -32,104 +33,104 @@
   "variantes": [
     {
       "id": "08694bf1-5bc7-4203-a9b0-0005427c6d63",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "34",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "7290a447-25a4-4c79-9b14-02800b51de89",
-      "estoque": 2,
-      "preco": null,
       "atributos": {
         "tamanho": "35",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 2,
+      "preco": null
     },
     {
       "id": "75188855-dc8c-4c33-a5b5-eefdeb6625e0",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "36",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "013f84be-27e3-4d35-b7f5-70a68fd48c2a",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "37",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "08e30052-e149-49e9-95f1-c369dc025475",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "38",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "e738c589-cd43-40a9-a89d-e5776b87ab31",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "39",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "ba1346b4-2261-4e66-a321-a1f6f5c3760c",
-      "estoque": 2,
-      "preco": null,
       "atributos": {
         "tamanho": "40",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 2,
+      "preco": null
     },
     {
       "id": "28d43113-4f70-4a3b-a6b2-7926b8e0f332",
-      "estoque": 2,
-      "preco": null,
       "atributos": {
         "tamanho": "41",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 2,
+      "preco": null
     },
     {
       "id": "01cb7ec4-2b6b-4c6b-bfb0-6aeefd222ec7",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "42",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "90cd903e-e83d-4967-b0c4-fb7d0b59c328",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "43",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "3b27cbca-9856-4d13-a4bd-194836151023",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "44",
         "cor": "Preto Branco"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     }
   ],
   "criadoEm": "2026-07-17T19:54:59.475Z",
-  "atualizadoEm": "2026-07-17T20:00:04.503Z"
+  "atualizadoEm": "2026-07-30T19:32:19.863Z"
 }
