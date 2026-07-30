@@ -1,6 +1,6 @@
 {
   "id": "f089820f-7f1a-4fec-8612-d65c1a4752be",
-  "versao": 4,
+  "versao": 5,
   "nome": "Tênis Plumax",
   "slug": "tenis-plumax",
   "descricao": "Marca: Plumax\nReferência:8000\nTipo: Cadarço\nCabedal: Lona\nSolado: Borracha\n\n",
@@ -132,5 +132,5 @@
     }
   ],
   "criadoEm": "2026-07-17T19:54:59.475Z",
-  "atualizadoEm": "2026-07-30T19:32:19.863Z"
+  "atualizadoEm": "2026-07-30T20:06:23.379Z"
 }
