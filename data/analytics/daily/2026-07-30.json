@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-30",
+  "pageviews": 2,
+  "byPath": {
+    "/": 1,
+    "/catalogo": 1
+  },
+  "sessions": 1,
+  "sessionDurationMs": 6731,
+  "waClicks": 0,
+  "waBySource": {},
+  "waByProdutoId": {},
+  "leadsLinked": 0,
+  "seenSessionIds": [
+    "6e397f8d-761c-432b-9e2c-53649ecd0eba"
+  ],
+  "linkedSessionIds": []
+}
