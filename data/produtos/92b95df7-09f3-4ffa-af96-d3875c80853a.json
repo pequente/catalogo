@@ -1,9 +1,10 @@
 {
   "id": "92b95df7-09f3-4ffa-af96-d3875c80853a",
-  "versao": 6,
-  "nome": "Chinelo Rider Ref 12425",
+  "versao": 7,
+  "nome": "Chinelo Rider",
   "slug": "chinelo-rider-ref-12425",
   "descricao": "Marca: Rider\nReferência: 12425\nTipo: Dedo\nCabedal: Napa\nSolado: EVA + Borracha",
+  "referencia": "12425",
   "preco": 129.9,
   "precoPromocional": 99.9,
   "categoriasIds": [
@@ -32,59 +33,59 @@
   "variantes": [
     {
       "id": "3577e483-52ce-4e21-b6d1-a5ee48b52320",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "38",
         "cor": "Cinza Verde"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "daddcf92-66d8-4adb-b27c-a357c20dc10b",
-      "estoque": 2,
-      "preco": null,
       "atributos": {
         "tamanho": "39",
         "cor": "Cinza Verde"
-      }
+      },
+      "estoque": 2,
+      "preco": null
     },
     {
       "id": "d6fded66-fc01-4399-82fd-aad7fb6ce90a",
-      "estoque": 3,
-      "preco": null,
       "atributos": {
         "tamanho": "40",
         "cor": "Cinza Verde"
-      }
+      },
+      "estoque": 3,
+      "preco": null
     },
     {
       "id": "994a3687-d1b5-41d2-9807-998802ee469f",
-      "estoque": 3,
-      "preco": null,
       "atributos": {
         "tamanho": "41",
         "cor": "Cinza Verde"
-      }
+      },
+      "estoque": 3,
+      "preco": null
     },
     {
       "id": "2f016b01-8c29-41b6-b397-b8572ceac9fb",
-      "estoque": 2,
-      "preco": null,
       "atributos": {
         "tamanho": "42",
         "cor": "Cinza Verde"
-      }
+      },
+      "estoque": 2,
+      "preco": null
     },
     {
       "id": "fcedf9b9-3178-48b3-8b4b-f193845fc5b3",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "44",
         "cor": "Cinza Verde"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     }
   ],
   "criadoEm": "2026-07-17T20:23:29.466Z",
-  "atualizadoEm": "2026-07-21T16:34:00.083Z"
+  "atualizadoEm": "2026-07-30T19:31:34.134Z"
 }

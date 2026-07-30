@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30T19:18:56.482Z",
+  "updatedAt": "2026-07-30T19:31:34.232Z",
   "total": 4,
   "sharded": false,
   "entries": [
     {
       "id": "92b95df7-09f3-4ffa-af96-d3875c80853a",
-      "nome": "Chinelo Rider Ref 12425",
+      "nome": "Chinelo Rider",
       "slug": "chinelo-rider-ref-12425",
-      "referencia": "",
+      "referencia": "12425",
       "status": "ativo",
       "destaque": true,
       "lancamento": false,
@@ -49,7 +49,7 @@
         "Cinza Verde"
       ],
       "path": "produtos/92b95df7-09f3-4ffa-af96-d3875c80853a.json",
-      "atualizadoEm": "2026-07-21T16:34:00.083Z"
+      "atualizadoEm": "2026-07-30T19:31:34.134Z"
     },
     {
       "id": "68e5cf84-198b-452f-8331-d4d983732370",
