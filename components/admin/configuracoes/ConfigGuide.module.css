@@ -1,0 +1,98 @@
+.guide {
+  border: 1px solid var(--vn-border);
+  border-radius: var(--vn-radius);
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--vn-primary) 7%, #fff),
+      color-mix(in srgb, var(--vn-secondary) 3%, #fff) 52%,
+      #fff 100%
+    );
+  overflow: hidden;
+  margin-bottom: 0.15rem;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1.05rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--vn-secondary) 55%, transparent);
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.chevron {
+  flex: 0 0 auto;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.7;
+  transition: transform 0.15s ease;
+}
+
+.guide[open] .chevron {
+  transform: rotate(225deg);
+  margin-top: 0.2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chevron {
+    transition: none;
+  }
+}
+
+.body {
+  padding: 0 1.05rem 0.9rem;
+}
+
+.steps {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+}
+
+.step {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--vn-secondary) 72%, transparent);
+}
+
+.num {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 999px;
+  background: var(--vn-secondary);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.stepBody {
+  min-width: 0;
+}
+
+.stepTitle {
+  font-weight: 700;
+  color: color-mix(in srgb, var(--vn-secondary) 88%, transparent);
+}

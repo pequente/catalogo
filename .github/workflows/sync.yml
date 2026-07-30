@@ -1,0 +1,54 @@
+name: Sync upstream (auto-merge)
+
+on:
+  schedule:
+    - cron: "14 * * * *" # 1× por hora, minuto :14 (fora do pico :00/:15/:30)
+  workflow_dispatch: # permite disparo manual pelo botão "Run workflow"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repo do cliente
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Sincronizar código do upstream (repo base)
+        run: |
+          set -euo pipefail
+
+          git config user.name "sync-bot"
+          git config user.email "bot@sync.local"
+
+          git remote add upstream https://github.com/joaop06/vina.git 2>/dev/null || true
+          git remote set-url upstream https://github.com/joaop06/vina.git
+          git fetch upstream main
+
+          ANTES=$(git rev-parse HEAD)
+
+          # Repos criados por template não compartilham histórico com o base, então
+          # merge é impossível. Em vez disso, a árvore do upstream é aplicada como
+          # fonte da verdade do código e data/ é devolvido ao estado do cliente.
+          git read-tree --reset -u upstream/main
+
+          if git cat-file -e "$ANTES:data" 2>/dev/null; then
+            git rm -r --cached --quiet --ignore-unmatch data
+            rm -rf data
+            git checkout "$ANTES" -- data
+          fi
+
+          if git diff --quiet --cached "$ANTES"; then
+            echo "Já está em sincronia com o upstream, nada a fazer."
+            exit 0
+          fi
+
+          git commit -m "sync: código do repo base ($(git rev-parse --short upstream/main))"
+
+          # push direto no main -> dispara o redeploy da Vercel
+          git push origin main

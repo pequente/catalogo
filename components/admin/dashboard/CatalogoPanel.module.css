@@ -1,0 +1,75 @@
+/* Catalog-specific visuals; shared KPI/section styles come from NegocioPanel.module.css */
+
+.mixPanel {
+  margin-top: 0.25rem;
+}
+
+.mixBar {
+  display: flex;
+  width: 100%;
+  height: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #eee;
+}
+
+.mixSeg {
+  min-width: 2px;
+  height: 100%;
+  transition: flex-grow 0.45s ease;
+}
+
+.mixAtivos {
+  background: #1a1a1a;
+}
+
+.mixOcultos {
+  background: #a3a3a3;
+}
+
+.mixEsgotados {
+  background: var(--vn-primary, #111111);
+}
+
+.mixLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--vn-text-sm, 0.8125rem);
+  color: #444;
+}
+
+.mixLegend strong {
+  font-variant-numeric: tabular-nums;
+  color: #111;
+}
+
+.mixPct {
+  color: #888;
+  font-weight: 500;
+}
+
+.mixSwatch {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  margin-right: 0.4rem;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.interestHint {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--vn-primary, #111111);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mixSeg {
+    transition: none;
+  }
+}

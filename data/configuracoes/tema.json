@@ -1,0 +1,14 @@
+{
+  "tema": {
+    "raio": 8,
+    "larguraContainer": "1120px",
+    "corWhatsapp": "#25D366",
+    "corInstagram": "#E1306C",
+    "fonteCorpo": "poppins",
+    "fonteDisplay": "bebas-neue"
+  },
+  "seo": {
+    "titleTemplate": "%s · {nomeLoja}",
+    "idioma": "pt-BR"
+  }
+}

@@ -1,0 +1,464 @@
+.shell {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: minmax(0, auto) minmax(0, 1fr);
+  overflow: hidden;
+  background: var(--vn-surface);
+}
+
+@media (min-width: 900px) {
+  .shell {
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  }
+}
+
+/* ── Brand panel ─────────────────────────────────────────── */
+
+.brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 0;
+  padding: calc(1rem + var(--vn-safe-top)) 1.25rem 1rem;
+  color: var(--vn-surface);
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(
+      120% 90% at 10% 0%,
+      color-mix(in srgb, var(--vn-primary) 72%, transparent) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      90% 80% at 100% 100%,
+      color-mix(in srgb, var(--vn-primary) 45%, transparent) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      155deg,
+      var(--vn-secondary) 0%,
+      color-mix(in srgb, var(--vn-secondary) 55%, var(--vn-primary)) 55%,
+      var(--vn-primary) 120%
+    );
+  animation: brandIn 0.45s ease-out both;
+}
+
+.brand::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    -18deg,
+    transparent 0,
+    transparent 18px,
+    color-mix(in srgb, var(--vn-surface) 4%, transparent) 18px,
+    color-mix(in srgb, var(--vn-surface) 4%, transparent) 19px
+  );
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.brand::after {
+  content: "";
+  position: absolute;
+  width: min(70vw, 420px);
+  height: min(70vw, 420px);
+  right: -18%;
+  bottom: -28%;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--vn-surface) 8%, transparent);
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (min-width: 900px) {
+  .brand {
+    padding: 3rem 3.25rem 2.5rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.brandMain {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 28rem;
+}
+
+@media (min-width: 900px) {
+  .brandMain {
+    gap: 1.15rem;
+  }
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: clamp(2.75rem, 8vw, 4.5rem);
+  max-width: min(100%, 280px);
+  object-fit: contain;
+  object-position: left center;
+  filter: drop-shadow(
+    0 8px 24px color-mix(in srgb, var(--vn-secondary) 35%, transparent)
+  );
+}
+
+@media (min-width: 900px) {
+  .logo {
+    height: clamp(4rem, 7vw, 5.5rem);
+    max-width: min(100%, 340px);
+  }
+}
+
+.logoWithName {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.logoWithName .logo {
+  height: clamp(2.25rem, 6vw, 3.25rem);
+  max-width: 140px;
+}
+
+@media (min-width: 900px) {
+  .logoWithName .logo {
+    height: clamp(3rem, 5vw, 3.75rem);
+    max-width: 180px;
+  }
+}
+
+.name {
+  font-family: var(--vn-font-display);
+  font-size: clamp(1.5rem, 5.5vw, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+  text-wrap: balance;
+}
+
+@media (min-width: 900px) {
+  .name {
+    font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+  }
+}
+
+.assinatura {
+  margin: 0;
+  font-size: var(--vn-text-sm);
+  line-height: 1.45;
+  opacity: 0.88;
+  max-width: 32ch;
+  text-wrap: pretty;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .assinatura {
+    font-size: var(--vn-text-md);
+    max-width: 38ch;
+    -webkit-line-clamp: 4;
+  }
+}
+
+.slogan {
+  margin: 0;
+  font-family: var(--vn-font-display);
+  font-size: var(--vn-text-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.location {
+  margin: 0;
+  font-size: var(--vn-text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+@media (min-width: 900px) {
+  .location {
+    position: absolute;
+    left: 3.25rem;
+    bottom: 2.5rem;
+  }
+}
+
+/* ── Form panel ──────────────────────────────────────────── */
+
+.panel {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 0;
+  overflow: hidden;
+  padding: 1.25rem 1.25rem calc(1.25rem + var(--vn-safe-bottom));
+  background: linear-gradient(180deg, var(--vn-muted) 0%, var(--vn-surface) 40%);
+  animation: panelIn 0.45s ease-out 0.06s both;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    padding: 2.5rem 3rem;
+    background: var(--vn-surface);
+  }
+}
+
+.form {
+  width: min(380px, 100%);
+  display: grid;
+  gap: 1rem;
+  max-height: 100%;
+}
+
+@media (max-height: 700px) {
+  .brand {
+    gap: 0.5rem;
+    padding-block: calc(0.75rem + var(--vn-safe-top)) 0.75rem;
+  }
+
+  .brandMain {
+    gap: 0.5rem;
+  }
+
+  .assinatura {
+    -webkit-line-clamp: 2;
+  }
+
+  .slogan,
+  .location {
+    display: none;
+  }
+
+  .panel {
+    padding-block: 0.85rem;
+  }
+
+  .form {
+    gap: 0.75rem;
+  }
+
+  .formHeader {
+    margin-bottom: 0;
+  }
+
+  .formHint {
+    display: none;
+  }
+}
+
+@media (max-height: 700px) and (min-width: 900px) {
+  .slogan {
+    display: block;
+  }
+
+  .location {
+    display: block;
+  }
+
+  .formHint {
+    display: block;
+  }
+}
+
+.formHeader {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.formTitle {
+  margin: 0;
+  font-family: var(--vn-font-display);
+  font-size: var(--vn-text-2xl);
+  letter-spacing: 0.04em;
+  color: var(--vn-secondary);
+}
+
+.formHint {
+  margin: 0;
+  font-size: var(--vn-text-sm);
+  color: color-mix(in srgb, var(--vn-secondary) 55%, transparent);
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  font-size: var(--vn-text-sm);
+  font-weight: 600;
+  color: var(--vn-secondary);
+}
+
+.field :global(.input) {
+  font-size: 1rem;
+  background: var(--vn-muted);
+  border-color: var(--vn-border);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.field :global(.input:focus) {
+  background: var(--vn-surface);
+}
+
+.passwordWrap {
+  position: relative;
+  display: block;
+}
+
+.passwordInput {
+  padding-right: 2.75rem;
+  width: 100%;
+}
+
+.passwordToggle {
+  position: absolute;
+  top: 50%;
+  right: 0.35rem;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: color-mix(in srgb, var(--vn-secondary) 55%, transparent);
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.passwordToggle:hover {
+  color: var(--vn-secondary);
+  background: color-mix(in srgb, var(--vn-secondary) 6%, transparent);
+}
+
+.passwordToggle:focus-visible {
+  outline: 2px solid var(--vn-primary);
+  outline-offset: 1px;
+}
+
+.error {
+  color: var(--vn-primary);
+  margin: 0;
+  font-size: var(--vn-text-sm);
+  font-weight: 600;
+}
+
+.submit {
+  margin-top: 0.15rem;
+  min-height: var(--vn-touch);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.submit:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.submit:not(:disabled):active {
+  transform: translateY(0);
+}
+
+/* ── Suspense fallback ───────────────────────────────────── */
+
+.formSkeleton {
+  width: min(380px, 100%);
+  display: grid;
+  gap: 0.85rem;
+}
+
+.skelLine {
+  height: 1.1rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--vn-secondary) 8%, var(--vn-muted));
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.skelTitle {
+  width: 55%;
+  height: 1.4rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--vn-secondary) 8%, var(--vn-muted));
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.skelField {
+  height: 2.75rem;
+  margin-top: 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--vn-secondary) 8%, var(--vn-muted));
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.skelButton {
+  height: var(--vn-touch);
+  margin-top: 0.35rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--vn-primary) 25%, var(--vn-muted));
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+/* ── Motion ──────────────────────────────────────────────── */
+
+@keyframes brandIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand,
+  .panel,
+  .skelLine,
+  .skelTitle,
+  .skelField,
+  .skelButton {
+    animation: none;
+  }
+
+  .submit:not(:disabled):hover,
+  .submit:not(:disabled):active {
+    transform: none;
+  }
+}

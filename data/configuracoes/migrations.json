@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "applied": {
+    "2026-07-production-baseline": {
+      "appliedAt": "2026-07-27T18:00:41.767Z"
+    },
+    "2026-07-split-site-config-by-tab": {
+      "appliedAt": "2026-07-27T18:00:41.776Z"
+    },
+    "2026-07-indices-repair": {
+      "appliedAt": "2026-07-27T18:00:41.792Z"
+    },
+    "2026-07-merge-geral-config-tab": {
+      "appliedAt": "2026-07-30T01:38:02.135Z"
+    }
+  }
+}

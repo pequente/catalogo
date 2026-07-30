@@ -1,0 +1,15 @@
+{
+  "layout": "classic",
+  "vitrine": {
+    "homeDestaquesLimit": 8,
+    "homeLancamentosFetchLimit": 16,
+    "homeLancamentosLimit": 8,
+    "homeFallbackLimit": 8,
+    "catalogoPageSizeDefault": 12,
+    "catalogoPageSizeOptions": [
+      12,
+      24,
+      48
+    ]
+  }
+}

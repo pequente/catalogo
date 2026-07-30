@@ -1,0 +1,64 @@
+{
+  "navegacao": {
+    "topbar": {
+      "mostrarEndereco": true,
+      "mostrarTelefone": true
+    },
+    "header": {
+      "itens": [
+        {
+          "id": "header-link-catalogo",
+          "visivel": true,
+          "tipo": "link",
+          "chave": "catalogo"
+        },
+        {
+          "id": "header-categorias",
+          "visivel": true,
+          "tipo": "categorias",
+          "categoriaIds": null,
+          "maxRaizes": 4,
+          "incluirFilhos": true
+        },
+        {
+          "id": "header-link-sobre",
+          "visivel": true,
+          "tipo": "link",
+          "chave": "sobre"
+        }
+      ],
+      "mostrarBusca": true
+    },
+    "drawer": {
+      "itens": [
+        {
+          "id": "drawer-link-catalogo",
+          "visivel": true,
+          "tipo": "link",
+          "chave": "catalogo"
+        },
+        {
+          "id": "drawer-categorias",
+          "visivel": true,
+          "tipo": "categorias",
+          "categoriaIds": null,
+          "maxRaizes": null,
+          "incluirFilhos": true
+        },
+        {
+          "id": "drawer-link-sobre",
+          "visivel": true,
+          "tipo": "link",
+          "chave": "sobre"
+        }
+      ],
+      "mostrarBusca": false,
+      "extras": {
+        "mostrarTitulo": true,
+        "mostrarAssinatura": true,
+        "mostrarWhatsapp": true,
+        "mostrarInstagram": true
+      }
+    }
+  }
+}

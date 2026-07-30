@@ -1,0 +1,16 @@
+{
+  "nomeLoja": "Minha loja",
+  "mostrarNomeComLogo": false,
+  "mostrarCarrinho": true,
+  "assinatura": "Catálogo online",
+  "slogan": "Configure sua vitrine no painel admin e comece a vender pelo WhatsApp.",
+  "cores": {
+    "primaria": "#111111",
+    "secundaria": "#111111",
+    "fundo": "#FFFFFF",
+    "fundoNeutro": "#F5F5F5",
+    "borda": "#E5E5E5"
+  },
+  "logo": null,
+  "metaReceitaMensal": null
+}

@@ -1,0 +1,48 @@
+{
+  "name": "vina",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "build": "next build",
+    "start": "next start",
+    "dev": "next dev --turbopack",
+    "dev:reset:data": "node scripts/dev-data.mjs reset",
+    "dev:restore:data": "node scripts/dev-data.mjs restore",
+    "dev:seed": "npm run dev:reset:data && tsx scripts/dev-seed.ts",
+    "test": "tsx --test src/lib/br/endereco.test.ts src/lib/api/client-error.test.ts src/lib/api/errors.test.ts src/lib/wa.test.ts src/lib/wa-template-validation.test.ts src/lib/front/client-filter.test.ts src/lib/front/catalog-facets.test.ts src/lib/dashboard-aggregates.test.ts src/lib/observability/read-metrics.test.ts src/lib/pagination.test.ts src/lib/indices/product-index-core.test.ts src/lib/indices/product-index-consistency.test.ts src/lib/indices/order-index-core.test.ts src/lib/indices/client-index-core.test.ts src/lib/indices/phase6-anti-patterns.test.ts src/lib/data/fs-commit.test.ts src/lib/data/migrations/runner.test.ts src/lib/data/migrations/production-model.test.ts src/lib/cache/storefront-isr.test.ts src/schemas/dashboard-catalog-index.test.ts src/schemas/site-config-tabs.test.ts src/schemas/site-tema.test.ts src/schemas/banner-cta.test.ts src/services/site-config-seed.test.ts components/admin/configuracoes/siteTheme-color.test.ts",
+    "indices:rebuild": "tsx scripts/rebuild-product-indices.ts",
+    "indices:repair": "tsx scripts/rebuild-product-indices.ts --repair",
+    "indices:validate": "tsx scripts/rebuild-product-indices.ts --validate",
+    "check:store-copy": "tsx scripts/check-store-copy.ts",
+    "migrate:variants": "npm run data:migrate",
+    "data:migrate": "tsx scripts/run-data-migrations.ts",
+    "seed:validate": "tsx scripts/validate-seed-data.ts"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.0",
+    "jose": "^6.0.11",
+    "lucide-react": "^1.25.0",
+    "next": "15.5.20",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "server-only": "^0.0.1",
+    "sonner": "^2.0.7",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.20",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.1",
+    "typescript": "^5"
+  }
+}

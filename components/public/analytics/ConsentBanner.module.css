@@ -1,0 +1,102 @@
+.banner {
+  position: fixed;
+  z-index: 60;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.65rem 1rem;
+  padding: 0.75rem 1rem;
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  background: rgba(18, 18, 18, 0.94);
+  color: #f5f5f5;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  height: auto;
+  max-height: none;
+}
+
+.text {
+  margin: 0;
+  flex: 1 1 12rem;
+  min-width: 0;
+  max-width: 42rem;
+  opacity: 0.92;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.decline,
+.accept {
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.5rem 0.9rem;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  line-height: 1.2;
+  min-height: 2.25rem;
+}
+
+.decline {
+  background: transparent;
+  color: rgba(245, 245, 245, 0.8);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding-inline: 0.5rem;
+}
+
+.decline:hover {
+  color: #fff;
+}
+
+.accept {
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+}
+
+.accept:hover {
+  background: #f0f0f0;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem 0.75rem;
+    padding: 0.7rem 0.85rem;
+    padding-bottom: calc(0.7rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .text {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: none;
+  }
+
+  .actions {
+    flex: 1 1 auto;
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  .accept {
+    flex: 0 0 auto;
+    min-width: 5.5rem;
+  }
+}

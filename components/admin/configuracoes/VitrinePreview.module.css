@@ -1,0 +1,388 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.rootLive {
+  animation: none;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--vn-secondary) 50%, transparent);
+}
+
+.viewportToggle {
+  display: inline-flex;
+  padding: 0.15rem;
+  border: 1px solid var(--vn-border);
+  border-radius: 999px;
+  background: #fff;
+  gap: 0.15rem;
+}
+
+.viewportBtn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: color-mix(in srgb, var(--vn-secondary) 58%, transparent);
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.viewportBtn:hover {
+  color: var(--vn-secondary);
+}
+
+.viewportBtn:focus-visible {
+  outline: 2px solid var(--vn-primary);
+  outline-offset: 1px;
+}
+
+.viewportBtnActive {
+  background: var(--vn-secondary);
+  color: #fff;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  padding: 0.85rem 0.55rem;
+  border-radius: 12px;
+  border: 1px solid var(--vn-border);
+  background:
+    radial-gradient(
+      ellipse at top,
+      color-mix(in srgb, var(--preview-primary, var(--vn-primary)) 12%, #f7f7f7),
+      #ebebeb 70%
+    );
+  transition: padding 0.2s ease;
+}
+
+.stageDesktop {
+  padding-inline: 0.65rem;
+}
+
+.stageMobile {
+  padding-inline: 1.4rem;
+}
+
+.shell {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--vn-secondary) 18%, transparent);
+  background: #fff;
+  box-shadow:
+    0 10px 28px color-mix(in srgb, #000 10%, transparent),
+    0 1px 0 color-mix(in srgb, #fff 70%, transparent);
+  transition: max-width 0.2s ease;
+}
+
+.stageMobile .shell {
+  max-width: 14.5rem;
+}
+
+.chrome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.45rem 0.65rem;
+  background: #111;
+  color: #fff;
+}
+
+.brand {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav {
+  font-size: 0.62rem;
+  opacity: 0.7;
+}
+
+.classicHero,
+.galleryHero {
+  position: relative;
+  min-height: 7.5rem;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.stageMobile .classicHero,
+.stageMobile .galleryHero {
+  min-height: 6.5rem;
+}
+
+.classicGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--preview-primary, var(--vn-primary)) 75%, #111),
+    #111 70%
+  );
+}
+
+.classicScrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 20%,
+    color-mix(in srgb, #000 58%, transparent) 100%
+  );
+  pointer-events: none;
+}
+
+.coverImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+
+.classicCopy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.7rem 0.75rem;
+  color: #fff;
+  width: 100%;
+}
+
+.classicCopy strong {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.splitHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 7.25rem;
+}
+
+.splitHeroStack {
+  grid-template-columns: 1fr;
+}
+
+.splitCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.7rem 0.75rem;
+  background: color-mix(in srgb, var(--preview-primary, var(--vn-primary)) 88%, #111);
+  color: #fff;
+}
+
+.splitCopy strong {
+  font-size: 0.9rem;
+}
+
+.splitVisual {
+  position: relative;
+  min-height: 5.5rem;
+  background: #222;
+  overflow: hidden;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.4rem;
+  padding: 0.55rem 0.55rem 0.15rem;
+  background: #f6f6f6;
+}
+
+.stageMobile .products {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.productCard {
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 1px solid var(--vn-border);
+  background: linear-gradient(180deg, #fff, #f0f0f0);
+}
+
+.faixa,
+.promo {
+  position: relative;
+  margin: 0.45rem 0.55rem;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px dashed color-mix(in srgb, var(--vn-primary) 35%, var(--vn-border));
+  background: #fafafa;
+}
+
+.faixa {
+  min-height: 2.8rem;
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  min-height: 4.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.stageMobile .promo {
+  grid-template-columns: 1fr;
+}
+
+.promoMedia {
+  position: relative;
+  min-height: 3.2rem;
+  background: #eee;
+}
+
+.promoBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.65rem;
+  background: #fff;
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  min-height: inherit;
+  height: 100%;
+  padding: 0.5rem;
+  color: color-mix(in srgb, var(--vn-secondary) 45%, transparent);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-align: center;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      #f3f3f3,
+      #f3f3f3 6px,
+      #fafafa 6px,
+      #fafafa 12px
+    );
+}
+
+.marker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  align-self: flex-start;
+  padding: 0.18rem 0.45rem 0.18rem 0.18rem;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #111;
+  background: color-mix(in srgb, #fff 88%, transparent);
+  box-shadow: 0 1px 4px color-mix(in srgb, #000 16%, transparent);
+}
+
+.markerEmpty {
+  opacity: 0.78;
+}
+
+.markerStep {
+  display: grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--vn-secondary);
+  color: #fff;
+  font-size: 0.62rem;
+}
+
+.ctaChip {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.splitCopy .ctaChip,
+.classicCopy .ctaChip {
+  background: #fff;
+  color: #111;
+}
+
+.dots {
+  display: flex;
+  gap: 0.28rem;
+  margin-top: 0.15rem;
+}
+
+.dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, #fff 35%, transparent);
+}
+
+.dotActive {
+  background: #fff;
+}
+
+.galleryNote {
+  margin: 0.55rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--vn-border);
+  background: color-mix(in srgb, var(--vn-secondary) 3%, #fff);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--vn-secondary) 58%, transparent);
+}
+
+.note {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--vn-secondary) 48%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shell,
+  .stage {
+    transition: none;
+  }
+}

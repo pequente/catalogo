@@ -1,0 +1,736 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.form {
+  min-width: 0;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.editCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  min-width: 0;
+}
+
+.fieldBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.whereBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, var(--vn-primary) 10%, #fff);
+  color: color-mix(in srgb, var(--vn-secondary) 75%, transparent);
+  border: 1px solid color-mix(in srgb, var(--vn-primary) 18%, var(--vn-border));
+  white-space: nowrap;
+}
+
+.livePreview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem 1.1rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--vn-secondary) 3.5%, #fff),
+      #fff 70%
+    );
+  border: 1px solid var(--vn-border);
+  border-radius: var(--vn-radius);
+  box-shadow: 0 1px 0 color-mix(in srgb, #000 3%, transparent);
+}
+
+.previewEyebrow {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--vn-secondary) 48%, transparent);
+}
+
+.brandStage {
+  overflow: hidden;
+  border-radius: calc(var(--vn-radius) - 2px);
+  border: 1px solid var(--vn-border);
+  background: #fff;
+  box-shadow: 0 10px 28px color-mix(in srgb, #000 7%, transparent);
+}
+
+.brandChrome {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.65rem;
+  background: color-mix(in srgb, var(--vn-secondary) 5%, #f4f4f4);
+  border-bottom: 1px solid var(--vn-border);
+}
+
+.chromeDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--vn-secondary) 22%, transparent);
+}
+
+.chromeUrl {
+  margin-left: 0.35rem;
+  flex: 1;
+  min-width: 0;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--vn-border);
+  font-size: 0.65rem;
+  font-weight: 550;
+  color: color-mix(in srgb, var(--vn-secondary) 45%, transparent);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brandShell {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  padding: 0.7rem 0.85rem;
+  background: color-mix(in srgb, var(--vn-secondary) 92%, #000);
+  color: #fff;
+}
+
+.brandIdentity {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.brandLogo {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.brandLogoFallback {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--vn-primary) 85%, #fff);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  min-width: 0;
+}
+
+.brandName {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brandSignature {
+  font-size: 0.65rem;
+  opacity: 0.72;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brandNav {
+  display: none;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.68rem;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+@media (min-width: 420px) {
+  .brandNav {
+    display: inline-flex;
+  }
+}
+
+.brandCart {
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, #fff 18%, transparent);
+  font-weight: 650;
+}
+
+.brandHero {
+  padding: 0.85rem;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--vn-primary) 12%, #fff),
+      color-mix(in srgb, var(--vn-secondary) 4%, #fff)
+    );
+  border-bottom: 1px solid var(--vn-border);
+}
+
+.brandHeroLabel {
+  margin: 0 0 0.25rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--vn-secondary) 48%, transparent);
+}
+
+.brandSlogan {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  font-weight: 550;
+  color: color-mix(in srgb, var(--vn-secondary) 78%, transparent);
+}
+
+.brandFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  background: color-mix(in srgb, var(--vn-secondary) 4%, #fff);
+}
+
+.brandFooterBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.brandFooterBrand strong {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--vn-secondary);
+}
+
+.brandFooterBrand span {
+  display: block;
+  font-size: 0.65rem;
+  color: color-mix(in srgb, var(--vn-secondary) 48%, transparent);
+}
+
+.brandFooterLogo {
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.brandFooterMeta {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--vn-secondary) 42%, transparent);
+}
+
+.impactList {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.impactList li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.55rem;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--vn-secondary) 62%, transparent);
+}
+
+/* —— Carrinho —— */
+.cartSection {
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--vn-primary) 3%, #fff),
+      #fff
+    );
+}
+
+.cartBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.cartDecision {
+  display: grid;
+  gap: 1rem;
+  padding: 1.05rem 1.15rem;
+  border-radius: calc(var(--vn-radius) - 1px);
+  border: 1px solid var(--vn-border);
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cartDecisionOn {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--vn-primary) 8%, #fff),
+      #fff 60%
+    );
+  border-color: color-mix(in srgb, var(--vn-primary) 28%, var(--vn-border));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--vn-primary) 8%, transparent);
+}
+
+.cartDecisionOff {
+  background: color-mix(in srgb, var(--vn-secondary) 3%, #fff);
+}
+
+.cartDecisionHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.85rem 1.25rem;
+}
+
+.cartStatusLabel {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--vn-secondary);
+}
+
+.cartDecisionOn .cartStatusLabel {
+  color: color-mix(in srgb, var(--vn-primary) 55%, var(--vn-secondary));
+}
+
+.cartStatusDesc {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--vn-secondary) 58%, transparent);
+}
+
+.cartSwitch {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.cartFlowCompact {
+  display: none;
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--vn-secondary) 62%, transparent);
+}
+
+.cartFlow {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
+}
+
+@media (max-width: 767.98px) {
+  .cartFlowCompact {
+    display: block;
+  }
+
+  .cartFlow {
+    display: none;
+  }
+
+  .cartStatusDesc {
+    display: none;
+  }
+}
+
+.cartStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: calc(var(--vn-radius) - 3px);
+  border: 1px solid var(--vn-border);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  font-weight: 550;
+  background: #fff;
+}
+
+.cartStepNum {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cartStepOn {
+  border-color: color-mix(in srgb, var(--vn-primary) 28%, var(--vn-border));
+  color: color-mix(in srgb, var(--vn-secondary) 78%, transparent);
+}
+
+.cartStepOn .cartStepNum {
+  background: var(--vn-primary);
+}
+
+.cartStepAlt {
+  border-color: color-mix(in srgb, var(--vn-secondary) 18%, var(--vn-border));
+  color: color-mix(in srgb, var(--vn-secondary) 72%, transparent);
+}
+
+.cartStepAlt .cartStepNum {
+  background: var(--vn-secondary);
+}
+
+.cartStepOff {
+  opacity: 0.72;
+  color: color-mix(in srgb, var(--vn-secondary) 48%, transparent);
+  background: color-mix(in srgb, var(--vn-secondary) 2%, #fff);
+}
+
+.cartStepOff .cartStepNum {
+  background: color-mix(in srgb, var(--vn-secondary) 35%, transparent);
+}
+
+.cartWhere {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* —— Cores —— */
+.colorGrid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+}
+
+.colorFieldWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.colorStage {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: calc(var(--vn-radius) - 2px);
+  background: linear-gradient(180deg, #f3f3f3 0%, #ebebeb 100%);
+  border: 1px solid var(--vn-border);
+}
+
+.colorShell {
+  width: 100%;
+  max-width: 16rem;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--gp-border, #ddd);
+  background: var(--gp-bg, #fff);
+  box-shadow: 0 8px 22px color-mix(in srgb, #000 8%, transparent);
+}
+
+.colorHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  background: var(--gp-secondary, #111);
+  color: #fff;
+  font-size: 0.78rem;
+}
+
+.colorHeader span {
+  font-size: 0.65rem;
+  opacity: 0.75;
+}
+
+.colorBody {
+  padding: 0.7rem;
+  background: var(--gp-muted, #f5f5f5);
+}
+
+.colorCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.55rem;
+  border-radius: 8px;
+  border: 1px solid var(--gp-border, #ddd);
+  background: var(--gp-bg, #fff);
+}
+
+.colorThumb {
+  height: 3rem;
+  border-radius: 6px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--gp-primary) 70%, #fff),
+    var(--gp-primary)
+  );
+}
+
+.colorTitle {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gp-secondary, #111);
+}
+
+.colorText {
+  margin: 0;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--gp-secondary) 55%, transparent);
+}
+
+.colorCta {
+  align-self: flex-start;
+  margin-top: 0.2rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  background: var(--gp-primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 650;
+}
+
+.colorLegend {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.colorLegend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  line-height: 1.3;
+  color: color-mix(in srgb, var(--vn-secondary) 62%, transparent);
+}
+
+.colorLegend strong {
+  display: block;
+  font-weight: 650;
+  color: color-mix(in srgb, var(--vn-secondary) 78%, transparent);
+}
+
+.colorLegend em {
+  display: block;
+  font-style: normal;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--vn-secondary) 48%, transparent);
+}
+
+.colorSwatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, #000 12%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, #fff 35%, transparent);
+}
+
+/* —— Meta —— */
+.metaField input {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.metaWhere {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.metaWhereNote {
+  font-size: 0.76rem;
+  font-weight: 550;
+  color: color-mix(in srgb, var(--vn-secondary) 48%, transparent);
+}
+
+.metaEmpty {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.85rem 1rem;
+  border-radius: calc(var(--vn-radius) - 2px);
+  border: 1px dashed color-mix(in srgb, var(--vn-secondary) 18%, var(--vn-border));
+  background: color-mix(in srgb, var(--vn-secondary) 2%, #fff);
+}
+
+.metaEmptyIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: color-mix(in srgb, var(--vn-secondary) 42%, transparent);
+}
+
+.metaEmptyTitle {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--vn-secondary) 72%, transparent);
+}
+
+.previewEmpty {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--vn-secondary) 55%, transparent);
+}
+
+.previewEmpty strong {
+  font-weight: 650;
+  color: color-mix(in srgb, var(--vn-secondary) 72%, transparent);
+}
+
+.previewCard {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border: 1px solid var(--vn-border);
+  border-radius: calc(var(--vn-radius) - 2px);
+  box-shadow: 0 4px 14px color-mix(in srgb, #000 5%, transparent);
+}
+
+.previewIcon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.05rem;
+  color: var(--vn-primary);
+}
+
+.previewBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.previewTitle {
+  margin: 0 0 0.45rem;
+  font-size: 0.8125rem;
+  font-weight: 650;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--vn-secondary) 82%, transparent);
+}
+
+.previewBar {
+  height: 10px;
+  background: color-mix(in srgb, var(--vn-secondary) 8%, #fff);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.previewFill {
+  height: 100%;
+  background: var(--vn-secondary);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.previewDetail {
+  margin: 0.45rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--vn-secondary) 58%, transparent);
+}
+
+.previewDetail strong {
+  font-weight: 700;
+  color: var(--vn-secondary);
+}
+
+.previewNote {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--vn-secondary) 45%, transparent);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cartDecision,
+  .previewFill {
+    transition: none;
+  }
+}

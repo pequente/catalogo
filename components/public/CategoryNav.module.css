@@ -1,0 +1,162 @@
+/* Desktop header dropdown */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownTrigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.chevron {
+  font-size: 0.65em;
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0.35rem);
+  min-width: 11rem;
+  padding: 0.4rem 0;
+  background: #fff;
+  border: 1px solid var(--vn-border, #e5e5e5);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.15s ease,
+    visibility 0.15s ease,
+    transform 0.15s ease;
+  z-index: 40;
+}
+
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0.15rem);
+}
+
+.submenuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenuItem {
+  position: relative;
+}
+
+.submenuItem > a {
+  display: block;
+  padding: 0.55rem 0.95rem;
+  color: var(--vn-secondary, #111);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.submenuItem > a:hover,
+.submenuItem > a:focus-visible {
+  background: color-mix(in srgb, var(--vn-primary) 8%, var(--vn-surface));
+  color: var(--vn-primary);
+}
+
+.submenuItem > .submenuList {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 10rem;
+  margin-left: 0.15rem;
+  padding: 0.4rem 0;
+  background: #fff;
+  border: 1px solid var(--vn-border, #e5e5e5);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.submenuItem:hover > .submenuList,
+.submenuItem:focus-within > .submenuList {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Drawer accordion */
+.drawerTree {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  gap: 0.05rem;
+}
+
+.drawerBranch {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+}
+
+.drawerToggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: left;
+  width: 100%;
+  min-height: var(--vn-touch, 44px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.7rem 0.95rem;
+  border-radius: var(--vn-menu-radius, 10px);
+  cursor: pointer;
+}
+
+.drawerChevron {
+  flex-shrink: 0;
+  opacity: 0.65;
+  font-size: 0.85em;
+}
+
+.drawerChildren {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.drawerChildren[hidden] {
+  display: none;
+}
+
+.drawerLink {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  min-height: var(--vn-touch, 44px);
+  padding: 0.7rem 0.95rem;
+  border-radius: var(--vn-menu-radius, 10px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hover is owned by PublicMobileNav (variant-aware). */
