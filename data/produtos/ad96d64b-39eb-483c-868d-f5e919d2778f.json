@@ -1,9 +1,10 @@
 {
   "id": "ad96d64b-39eb-483c-868d-f5e919d2778f",
-  "versao": 3,
-  "nome": "Tênis Plumax Ref 7000",
+  "versao": 4,
+  "nome": "Tênis Plumax",
   "slug": "tenis-plumax-ref-7000",
   "descricao": "Marca: Plumax\nReferência: 7000\nTipo: Cadarço\nCabedal: Lona\nSolado: Borracha",
+  "referencia": "7000",
   "preco": 99.9,
   "precoPromocional": 79.9,
   "categoriasIds": [
@@ -32,104 +33,104 @@
   "variantes": [
     {
       "id": "d28fe2a0-cf83-417c-b0d5-c3751ac341dd",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "34",
         "cor": "Preto"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "c9c7bfcc-a64d-4b94-82ab-1fa3992158a4",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "35",
         "cor": "Preto"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "0bd0448b-0028-4028-89f5-9f4f91266481",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "36",
         "cor": "Preto"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "e3f0e8cb-0786-44d1-8711-524513d25590",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "37",
         "cor": "Preto"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "2955b822-c973-4e16-9970-272c101e8641",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "38",
         "cor": "Preto"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "d764e278-3a72-4182-a37e-3b84655ed39f",
-      "estoque": 2,
-      "preco": null,
       "atributos": {
         "tamanho": "39",
         "cor": "Preto"
-      }
+      },
+      "estoque": 2,
+      "preco": null
     },
     {
       "id": "24581465-1ca7-4cf9-8bca-5890a35b8ad1",
-      "estoque": 2,
-      "preco": null,
       "atributos": {
         "tamanho": "40",
         "cor": "Preto"
-      }
+      },
+      "estoque": 2,
+      "preco": null
     },
     {
       "id": "bb92a981-73eb-4606-91ae-d847c620ed63",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "41",
         "cor": "Preto"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "76231273-e3e9-444f-9267-e270fb272172",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "42",
         "cor": "Preto"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "fb94096e-6db3-42cf-9979-f29aeb70bc01",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "43",
         "cor": "Preto"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "9e6e4409-bfa7-4e7e-99be-bb27b4c40225",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "44",
         "cor": "Preto"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     }
   ],
   "criadoEm": "2026-07-17T19:59:40.194Z",
-  "atualizadoEm": "2026-07-17T20:01:07.907Z"
+  "atualizadoEm": "2026-07-30T19:32:05.089Z"
 }
