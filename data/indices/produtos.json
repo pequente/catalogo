@@ -1,61 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30T19:31:34.232Z",
+  "updatedAt": "2026-07-30T19:31:51.645Z",
   "total": 4,
   "sharded": false,
   "entries": [
     {
-      "id": "92b95df7-09f3-4ffa-af96-d3875c80853a",
-      "nome": "Chinelo Rider",
-      "slug": "chinelo-rider-ref-12425",
-      "referencia": "12425",
-      "status": "ativo",
-      "destaque": true,
-      "lancamento": false,
-      "preco": 129.9,
-      "precoPromocional": 99.9,
-      "categoriasIds": [
-        "6e9d475c-b55e-4be9-8f61-9c808b00c503"
-      ],
-      "capa": {
-        "path": "imagens/produtos/d4b83a15-4b58-4ecd-80c5-775aa7b1313d.jpg"
-      },
-      "estoqueTotal": 12,
-      "variantesCount": 6,
-      "precoExibicao": 99.9,
-      "mostrarAPartirDe": false,
-      "facetas": {
-        "tamanho": [
-          "38",
-          "39",
-          "40",
-          "41",
-          "42",
-          "44"
-        ],
-        "cor": [
-          "Cinza Verde"
-        ]
-      },
-      "tamanhos": [
-        "38",
-        "39",
-        "40",
-        "41",
-        "42",
-        "44"
-      ],
-      "cores": [
-        "Cinza Verde"
-      ],
-      "path": "produtos/92b95df7-09f3-4ffa-af96-d3875c80853a.json",
-      "atualizadoEm": "2026-07-30T19:31:34.134Z"
-    },
-    {
       "id": "68e5cf84-198b-452f-8331-d4d983732370",
-      "nome": "Tênis Plumax Ref 1307",
+      "nome": "Tênis Plumax",
       "slug": "tenis-plumax-ref-1307",
-      "referencia": "",
+      "referencia": "1307",
       "status": "ativo",
       "destaque": false,
       "lancamento": false,
@@ -106,7 +59,54 @@
         "Preto Dourado"
       ],
       "path": "produtos/68e5cf84-198b-452f-8331-d4d983732370.json",
-      "atualizadoEm": "2026-07-17T20:05:01.813Z"
+      "atualizadoEm": "2026-07-30T19:31:51.545Z"
+    },
+    {
+      "id": "92b95df7-09f3-4ffa-af96-d3875c80853a",
+      "nome": "Chinelo Rider",
+      "slug": "chinelo-rider-ref-12425",
+      "referencia": "12425",
+      "status": "ativo",
+      "destaque": true,
+      "lancamento": false,
+      "preco": 129.9,
+      "precoPromocional": 99.9,
+      "categoriasIds": [
+        "6e9d475c-b55e-4be9-8f61-9c808b00c503"
+      ],
+      "capa": {
+        "path": "imagens/produtos/d4b83a15-4b58-4ecd-80c5-775aa7b1313d.jpg"
+      },
+      "estoqueTotal": 12,
+      "variantesCount": 6,
+      "precoExibicao": 99.9,
+      "mostrarAPartirDe": false,
+      "facetas": {
+        "tamanho": [
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "44"
+        ],
+        "cor": [
+          "Cinza Verde"
+        ]
+      },
+      "tamanhos": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "44"
+      ],
+      "cores": [
+        "Cinza Verde"
+      ],
+      "path": "produtos/92b95df7-09f3-4ffa-af96-d3875c80853a.json",
+      "atualizadoEm": "2026-07-30T19:31:34.134Z"
     },
     {
       "id": "ad96d64b-39eb-483c-868d-f5e919d2778f",

@@ -1,9 +1,10 @@
 {
   "id": "68e5cf84-198b-452f-8331-d4d983732370",
-  "versao": 1,
-  "nome": "Tênis Plumax Ref 1307",
+  "versao": 2,
+  "nome": "Tênis Plumax",
   "slug": "tenis-plumax-ref-1307",
   "descricao": "Marca: Plumax\nReferência: 1307\nTipo: Cadarço\nCabedal: Lona\nSolado: Borracha",
+  "referencia": "1307",
   "preco": 99.9,
   "precoPromocional": 79.9,
   "categoriasIds": [
@@ -32,104 +33,104 @@
   "variantes": [
     {
       "id": "6b7e23f0-5eb9-4b96-b97e-267d60bd1372",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "34",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "b1e99c94-19c7-4db4-95d0-6345022fa53e",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "35",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "879123d0-1254-439b-96be-b0f6a44027e4",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "36",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "41847685-b01c-4218-a71d-694f960f15dd",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "37",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "facb8968-ea83-49bb-8aae-12ba55b77ae5",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "38",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "b52bc9c0-e23d-48b4-a102-74021dbde495",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "39",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "aaea40be-8c8f-4cb3-9d73-5608923fd9df",
-      "estoque": 1,
-      "preco": null,
       "atributos": {
         "tamanho": "40",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 1,
+      "preco": null
     },
     {
       "id": "8d158b45-64e2-45ec-b604-58d2330b9969",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "41",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "286d53bd-3465-4d00-a6d5-40ee6fb464d7",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "42",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "00155658-1500-4927-93af-355487dfce14",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "43",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     },
     {
       "id": "042301b9-6a5d-47d4-a08d-f7853d5d71af",
-      "estoque": 0,
-      "preco": null,
       "atributos": {
         "tamanho": "44",
         "cor": "Preto Dourado"
-      }
+      },
+      "estoque": 0,
+      "preco": null
     }
   ],
   "criadoEm": "2026-07-17T20:05:01.813Z",
-  "atualizadoEm": "2026-07-17T20:05:01.813Z"
+  "atualizadoEm": "2026-07-30T19:31:51.545Z"
 }
