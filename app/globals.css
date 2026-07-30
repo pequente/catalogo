@@ -50,6 +50,34 @@
   /** Sticky mobile admin chrome (menu bar + config tabs). */
   --admin-mobile-bar-h: calc(var(--vn-touch) + 1.5rem);
   --admin-config-tabs-h: 2.85rem;
+  /** Admin Sonner offsets (resolved via offset/mobileOffset CSS vars). */
+  --admin-toast-offset-top: 0.75rem;
+  --admin-toast-offset-right: 0.75rem;
+  --admin-toast-offset-bottom: 0.75rem;
+  --admin-toast-offset-left: 0.75rem;
+}
+
+/* Lift bottom-right toasts above the floating pagination dock. */
+body:has(.pagination-dock--floating) {
+  --admin-toast-offset-bottom: calc(
+    var(--vn-pagination-dock-h) + 0.75rem + var(--vn-safe-bottom)
+  );
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    /* Sit below the sticky mobile menu bar (top-center on mobile). */
+    --admin-toast-offset-top: calc(
+      var(--admin-mobile-bar-h) + 0.75rem + var(--vn-safe-top)
+    );
+  }
+
+  body:has(.dash-tabs--config .dash-tabs__list) {
+    --admin-toast-offset-top: calc(
+      var(--admin-mobile-bar-h) + var(--admin-config-tabs-h) + 0.75rem +
+        var(--vn-safe-top)
+    );
+  }
 }
 
 @media (min-width: 768px) {
@@ -6777,7 +6805,8 @@ body:has(.pagination-dock) .back-to-top {
 body:has([role="dialog"][aria-label="Cookies"]) .back-to-top,
 body:has(.catalog-filters__sheet-root) .back-to-top,
 body:has(#public-mobile-nav-panel) .back-to-top,
-body:has(.cart-toast) .back-to-top {
+body:has(.cart-toast) .back-to-top,
+body:has(.admin-toaster [data-sonner-toast]) .back-to-top {
   opacity: 0;
   pointer-events: none;
   transform: translateY(0.35rem);
@@ -7928,7 +7957,10 @@ body[data-layout="gallery"] .sobre-page__cta .btn {
 
 @media (min-width: 768px) {
   .admin-toaster [data-sonner-toaster][data-x-position="right"] {
-    right: max(0.75rem, env(safe-area-inset-right, 0px));
+    right: max(
+      var(--admin-toast-offset-right),
+      env(safe-area-inset-right, 0px)
+    );
   }
 }
 

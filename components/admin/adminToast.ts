@@ -6,7 +6,7 @@ import {
 } from "@/src/lib/api/client-error";
 
 const DEFAULT_ERROR_DURATION = 12_000;
-const DEFAULT_SUCCESS_DURATION = 4_000;
+const DEFAULT_SUCCESS_DURATION = 2_000;
 
 function linesToDescription(lines: string[]): ReactNode {
   if (lines.length === 0) return undefined;
