@@ -1,16 +1,20 @@
 {
-  "nomeLoja": "Minha loja",
-  "mostrarNomeComLogo": false,
+  "nomeLoja": "PÉ QUENTE ",
+  "mostrarNomeComLogo": true,
   "mostrarCarrinho": true,
-  "assinatura": "Catálogo online",
-  "slogan": "Configure sua vitrine no painel admin e comece a vender pelo WhatsApp.",
+  "assinatura": "A loja de calçados mais barato de Barretos e Região 🔥",
+  "slogan": "CALÇADOS · BOLSAS · ACESSÓRIOS",
   "cores": {
-    "primaria": "#111111",
+    "primaria": "#FF0000",
     "secundaria": "#111111",
     "fundo": "#FFFFFF",
     "fundoNeutro": "#F5F5F5",
     "borda": "#E5E5E5"
   },
-  "logo": null,
+  "logo": {
+    "id": "050ba9b8-5650-4a9a-bcc2-88ac6ecae94e",
+    "path": "imagens/site/050ba9b8-5650-4a9a-bcc2-88ac6ecae94e.jpg",
+    "alt": "PÉ QUENTE"
+  },
   "metaReceitaMensal": null
 }

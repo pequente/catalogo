@@ -1,7 +1,226 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-27T18:00:41.778Z",
-  "total": 0,
+  "updatedAt": "2026-07-30T19:18:56.482Z",
+  "total": 4,
   "sharded": false,
-  "entries": []
+  "entries": [
+    {
+      "id": "92b95df7-09f3-4ffa-af96-d3875c80853a",
+      "nome": "Chinelo Rider Ref 12425",
+      "slug": "chinelo-rider-ref-12425",
+      "referencia": "",
+      "status": "ativo",
+      "destaque": true,
+      "lancamento": false,
+      "preco": 129.9,
+      "precoPromocional": 99.9,
+      "categoriasIds": [
+        "6e9d475c-b55e-4be9-8f61-9c808b00c503"
+      ],
+      "capa": {
+        "path": "imagens/produtos/d4b83a15-4b58-4ecd-80c5-775aa7b1313d.jpg"
+      },
+      "estoqueTotal": 12,
+      "variantesCount": 6,
+      "precoExibicao": 99.9,
+      "mostrarAPartirDe": false,
+      "facetas": {
+        "tamanho": [
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "44"
+        ],
+        "cor": [
+          "Cinza Verde"
+        ]
+      },
+      "tamanhos": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "44"
+      ],
+      "cores": [
+        "Cinza Verde"
+      ],
+      "path": "produtos/92b95df7-09f3-4ffa-af96-d3875c80853a.json",
+      "atualizadoEm": "2026-07-21T16:34:00.083Z"
+    },
+    {
+      "id": "68e5cf84-198b-452f-8331-d4d983732370",
+      "nome": "Tênis Plumax Ref 1307",
+      "slug": "tenis-plumax-ref-1307",
+      "referencia": "",
+      "status": "ativo",
+      "destaque": false,
+      "lancamento": false,
+      "preco": 99.9,
+      "precoPromocional": 79.9,
+      "categoriasIds": [
+        "2514631a-33ca-4472-8266-897b502f04d7"
+      ],
+      "capa": {
+        "path": "imagens/produtos/b11828d1-2ec6-4d71-b72e-9d6e5276b12e.jpg"
+      },
+      "estoqueTotal": 5,
+      "variantesCount": 11,
+      "precoExibicao": 79.9,
+      "mostrarAPartirDe": false,
+      "facetas": {
+        "tamanho": [
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44"
+        ],
+        "cor": [
+          "Preto Dourado"
+        ]
+      },
+      "tamanhos": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "cores": [
+        "Preto Dourado"
+      ],
+      "path": "produtos/68e5cf84-198b-452f-8331-d4d983732370.json",
+      "atualizadoEm": "2026-07-17T20:05:01.813Z"
+    },
+    {
+      "id": "ad96d64b-39eb-483c-868d-f5e919d2778f",
+      "nome": "Tênis Plumax Ref 7000",
+      "slug": "tenis-plumax-ref-7000",
+      "referencia": "",
+      "status": "ativo",
+      "destaque": false,
+      "lancamento": false,
+      "preco": 99.9,
+      "precoPromocional": 79.9,
+      "categoriasIds": [
+        "2514631a-33ca-4472-8266-897b502f04d7"
+      ],
+      "capa": {
+        "path": "imagens/produtos/07f3d527-880b-43d6-ad7f-e79caa9c826d.jpg"
+      },
+      "estoqueTotal": 8,
+      "variantesCount": 11,
+      "precoExibicao": 79.9,
+      "mostrarAPartirDe": false,
+      "facetas": {
+        "tamanho": [
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44"
+        ],
+        "cor": [
+          "Preto"
+        ]
+      },
+      "tamanhos": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "cores": [
+        "Preto"
+      ],
+      "path": "produtos/ad96d64b-39eb-483c-868d-f5e919d2778f.json",
+      "atualizadoEm": "2026-07-17T20:01:07.907Z"
+    },
+    {
+      "id": "f089820f-7f1a-4fec-8612-d65c1a4752be",
+      "nome": "Tênis Plumax Ref 8000",
+      "slug": "tenis-plumax",
+      "referencia": "",
+      "status": "ativo",
+      "destaque": false,
+      "lancamento": false,
+      "preco": 99.9,
+      "precoPromocional": 79.9,
+      "categoriasIds": [
+        "2514631a-33ca-4472-8266-897b502f04d7"
+      ],
+      "capa": {
+        "path": "imagens/produtos/3d5f6784-a185-46f9-9176-db3c37d56255.jpg"
+      },
+      "estoqueTotal": 9,
+      "variantesCount": 11,
+      "precoExibicao": 79.9,
+      "mostrarAPartirDe": false,
+      "facetas": {
+        "tamanho": [
+          "34",
+          "35",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "43",
+          "44"
+        ],
+        "cor": [
+          "Preto Branco"
+        ]
+      },
+      "tamanhos": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "cores": [
+        "Preto Branco"
+      ],
+      "path": "produtos/f089820f-7f1a-4fec-8612-d65c1a4752be.json",
+      "atualizadoEm": "2026-07-17T20:00:04.503Z"
+    }
+  ]
 }

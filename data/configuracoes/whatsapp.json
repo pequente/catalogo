@@ -1,14 +1,14 @@
 {
   "whatsapp": {
-    "telefone": "11999999999",
+    "telefone": "17976008088",
     "mensagemPadrao": "Olá! Vim pelo site e gostaria de saber mais.",
     "mensagemProdutoParts": {
       "intro": "Tenho interesse no produto",
       "includeVariantDetails": true,
       "includeUrl": true,
-      "outro": "Segue disponível?"
+      "outro": "Segue disponível???"
     },
-    "mensagemProdutoIncluirReferencia": false,
+    "mensagemProdutoIncluirReferencia": true,
     "mensagemProdutoFormatoItens": "produto",
     "mensagemProdutoItemCompactoParts": {
       "bullet": "•",
@@ -24,7 +24,7 @@
     "mensagemCarrinhoItemCompactoParts": {
       "bullet": "•",
       "showResumo": true,
-      "showUrl": true
+      "showUrl": false
     }
   },
   "comportamento": {

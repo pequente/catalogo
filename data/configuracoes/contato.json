@@ -1,8 +1,8 @@
 {
   "instagram": {
-    "handle": "",
-    "url": "",
-    "mostrar": false
+    "handle": "pequentebarretos",
+    "url": "https://instagram.com/pequentebarretos",
+    "mostrar": true
   },
   "endereco": {
     "cep": "",
@@ -10,10 +10,10 @@
     "numero": "",
     "complemento": "",
     "bairro": "",
-    "cidade": "",
-    "uf": "",
-    "texto": "",
-    "mostrar": false
+    "cidade": "Barretos",
+    "uf": "SP",
+    "texto": "Barretos-SP",
+    "mostrar": true
   },
   "telefones": {
     "fixo": "",
@@ -22,9 +22,5 @@
     "mostrarFixo": false,
     "mostrarCelular": true
   },
-  "horarios": "Seg–Sex 9h–18h · Sáb 9h–13h",
-  "textos": {
-    "sobre": "Apresente sua loja aqui. Edite este texto em Admin → Personalização → Geral.",
-    "trocas": "Consulte nossa equipe pelo WhatsApp para trocas e devoluções."
-  }
+  "horarios": "Seg–Sex 9h–18h · Sáb 9h–13h"
 }

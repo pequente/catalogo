@@ -1,0 +1,90 @@
+{
+  "id": "92b95df7-09f3-4ffa-af96-d3875c80853a",
+  "versao": 6,
+  "nome": "Chinelo Rider Ref 12425",
+  "slug": "chinelo-rider-ref-12425",
+  "descricao": "Marca: Rider\nReferência: 12425\nTipo: Dedo\nCabedal: Napa\nSolado: EVA + Borracha",
+  "preco": 129.9,
+  "precoPromocional": 99.9,
+  "categoriasIds": [
+    "6e9d475c-b55e-4be9-8f61-9c808b00c503"
+  ],
+  "status": "ativo",
+  "destaque": true,
+  "lancamento": false,
+  "imagens": [
+    {
+      "id": "d4b83a15-4b58-4ecd-80c5-775aa7b1313d",
+      "path": "imagens/produtos/d4b83a15-4b58-4ecd-80c5-775aa7b1313d.jpg",
+      "ordem": 0
+    },
+    {
+      "id": "baee39b1-e139-410a-bc93-d661c0b81d17",
+      "path": "imagens/produtos/baee39b1-e139-410a-bc93-d661c0b81d17.jpg",
+      "ordem": 1
+    },
+    {
+      "id": "d414b362-1051-4692-95d0-953429d3f962",
+      "path": "imagens/produtos/d414b362-1051-4692-95d0-953429d3f962.jpg",
+      "ordem": 2
+    }
+  ],
+  "variantes": [
+    {
+      "id": "3577e483-52ce-4e21-b6d1-a5ee48b52320",
+      "estoque": 1,
+      "preco": null,
+      "atributos": {
+        "tamanho": "38",
+        "cor": "Cinza Verde"
+      }
+    },
+    {
+      "id": "daddcf92-66d8-4adb-b27c-a357c20dc10b",
+      "estoque": 2,
+      "preco": null,
+      "atributos": {
+        "tamanho": "39",
+        "cor": "Cinza Verde"
+      }
+    },
+    {
+      "id": "d6fded66-fc01-4399-82fd-aad7fb6ce90a",
+      "estoque": 3,
+      "preco": null,
+      "atributos": {
+        "tamanho": "40",
+        "cor": "Cinza Verde"
+      }
+    },
+    {
+      "id": "994a3687-d1b5-41d2-9807-998802ee469f",
+      "estoque": 3,
+      "preco": null,
+      "atributos": {
+        "tamanho": "41",
+        "cor": "Cinza Verde"
+      }
+    },
+    {
+      "id": "2f016b01-8c29-41b6-b397-b8572ceac9fb",
+      "estoque": 2,
+      "preco": null,
+      "atributos": {
+        "tamanho": "42",
+        "cor": "Cinza Verde"
+      }
+    },
+    {
+      "id": "fcedf9b9-3178-48b3-8b4b-f193845fc5b3",
+      "estoque": 1,
+      "preco": null,
+      "atributos": {
+        "tamanho": "44",
+        "cor": "Cinza Verde"
+      }
+    }
+  ],
+  "criadoEm": "2026-07-17T20:23:29.466Z",
+  "atualizadoEm": "2026-07-21T16:34:00.083Z"
+}

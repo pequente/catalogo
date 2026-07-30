@@ -1,5 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-27T18:00:41.788Z",
-  "byCelular": {}
+  "updatedAt": "2026-07-30T19:18:56.505Z",
+  "byCelular": {
+    "16993791185": "e958145a-ae05-4eaa-8b16-42d372fbedac",
+    "16991446877": "b5b0e295-b4bb-4967-a015-ff415a385cd6"
+  }
 }

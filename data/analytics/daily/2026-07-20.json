@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-20",
+  "pageviews": 16,
+  "byPath": {
+    "/": 10,
+    "/catalogo": 3,
+    "/sobre": 1,
+    "/produto/chinelo-rider-ref-12425": 1,
+    "/produto/tenis-plumax": 1
+  },
+  "sessions": 2,
+  "sessionDurationMs": 1394475,
+  "waClicks": 0,
+  "waBySource": {},
+  "waByProdutoId": {},
+  "leadsLinked": 0,
+  "seenSessionIds": [
+    "7038353f-03b4-459c-902c-77175b5c8775",
+    "015bee69-340d-476e-8025-6379c39f9053"
+  ],
+  "linkedSessionIds": []
+}

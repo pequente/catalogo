@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-22",
+  "pageviews": 8,
+  "byPath": {
+    "/carrinho": 4,
+    "/produto/tenis-plumax-ref-1307": 2,
+    "/": 1,
+    "/catalogo": 1
+  },
+  "sessions": 2,
+  "sessionDurationMs": 108142,
+  "waClicks": 0,
+  "waBySource": {},
+  "waByProdutoId": {},
+  "leadsLinked": 0,
+  "seenSessionIds": [
+    "76ec8a78-19a9-45fd-a061-83d08b63a395",
+    "85000f81-ad83-4ef7-a716-686225a02d32"
+  ],
+  "linkedSessionIds": []
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-21",
+  "pageviews": 11,
+  "byPath": {
+    "/": 6,
+    "/produto/chinelo-rider-ref-12425": 3,
+    "/catalogo": 2
+  },
+  "sessions": 3,
+  "sessionDurationMs": 173563,
+  "waClicks": 1,
+  "waBySource": {
+    "footer": 1
+  },
+  "waByProdutoId": {},
+  "leadsLinked": 0,
+  "seenSessionIds": [
+    "7038353f-03b4-459c-902c-77175b5c8775",
+    "eed09e3e-facb-47cc-8ac2-ad6e85dfd2b0",
+    "76ec8a78-19a9-45fd-a061-83d08b63a395"
+  ],
+  "linkedSessionIds": []
+}
