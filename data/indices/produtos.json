@@ -1,66 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30T20:06:23.496Z",
-  "total": 4,
+  "updatedAt": "2026-09-18T14:53:46.642Z",
+  "total": 3,
   "sharded": false,
   "entries": [
-    {
-      "id": "f089820f-7f1a-4fec-8612-d65c1a4752be",
-      "nome": "Tênis Plumax",
-      "slug": "tenis-plumax",
-      "referencia": "8000",
-      "status": "ativo",
-      "destaque": false,
-      "lancamento": false,
-      "preco": 99.9,
-      "precoPromocional": 79.9,
-      "categoriasIds": [
-        "2514631a-33ca-4472-8266-897b502f04d7"
-      ],
-      "capa": {
-        "path": "imagens/produtos/3d5f6784-a185-46f9-9176-db3c37d56255.jpg"
-      },
-      "estoqueTotal": 9,
-      "variantesCount": 11,
-      "precoExibicao": 79.9,
-      "mostrarAPartirDe": false,
-      "facetas": {
-        "tamanho": [
-          "34",
-          "35",
-          "36",
-          "37",
-          "38",
-          "39",
-          "40",
-          "41",
-          "42",
-          "43",
-          "44"
-        ],
-        "cor": [
-          "Preto Branco"
-        ]
-      },
-      "tamanhos": [
-        "34",
-        "35",
-        "36",
-        "37",
-        "38",
-        "39",
-        "40",
-        "41",
-        "42",
-        "43",
-        "44"
-      ],
-      "cores": [
-        "Preto Branco"
-      ],
-      "path": "produtos/f089820f-7f1a-4fec-8612-d65c1a4752be.json",
-      "atualizadoEm": "2026-07-30T20:06:23.379Z"
-    },
     {
       "id": "ad96d64b-39eb-483c-868d-f5e919d2778f",
       "nome": "Tênis Plumax",
