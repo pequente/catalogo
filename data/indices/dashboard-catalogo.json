@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-18T14:53:53.448Z",
+  "updatedAt": "2026-09-18T14:53:51.100Z",
   "produtos": 2,
   "ativos": 2,
   "ocultos": 0,
   "esgotados": 0,
-  "unidadesEstoque": 14,
+  "unidadesEstoque": 20,
   "produtosEstoqueZero": 0,
-  "destaques": 0,
+  "destaques": 1,
   "lancamentos": 0,
   "comPromocao": 2,
   "semCapa": 0
